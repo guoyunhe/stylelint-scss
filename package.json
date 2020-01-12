@@ -29,7 +29,6 @@
     "eslint": "^6.6.0",
     "eslint-config-stylelint": "^11.1.0",
     "eslint-plugin-lodash": "^6.0.0",
-    "eslint-plugin-sort-requires": "^2.1.0",
     "github-contributors-list": "^1.2.3",
     "husky": "^3.1.0",
     "jest": "^24.9.0",
@@ -56,7 +55,7 @@
     ],
     "parserOptions": {
       "sourceType": "module",
-      "ecmaVersion": 6
+      "ecmaVersion": 2019
     },
     "env": {
       "es6": true,
@@ -64,27 +63,12 @@
       "node": true
     },
     "plugins": [
-      "sort-requires",
       "lodash"
     ],
     "globals": {
       "testRule": true
     },
     "rules": {
-      "eqeqeq": "error",
-      "no-use-before-define": [
-        "error",
-        "nofunc"
-      ],
-      "sort-requires/sort-requires": "error",
-      "strict": [
-        "error",
-        "global"
-      ],
-      "arrow-spacing": "error",
-      "no-var": "error",
-      "object-shorthand": "error",
-      "prefer-const": "error",
       "template-curly-spacing": "error",
       "lodash/callback-binding": "error",
       "lodash/collection-method-value": "error",
@@ -93,16 +77,7 @@
       "lodash/no-extra-args": "error",
       "lodash/no-unbound-this": "error",
       "lodash/unwrap": "error",
-      "lodash/preferred-alias": "error",
-      "node/no-unsupported-features/es-syntax": [
-        "error",
-        {
-          "version": ">=8.0.0",
-          "ignores": [
-            "modules"
-          ]
-        }
-      ]
+      "lodash/preferred-alias": "error"
     }
   },
   "files": [
